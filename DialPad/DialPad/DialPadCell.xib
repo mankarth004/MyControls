@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="gTV-IL-0wX" customClass="DialPadCell" customModule="DialPad" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="101"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="101"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bU-Va-HJC">
+                        <rect key="frame" x="25" y="25.5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="8bU-Va-HJC" secondAttribute="height" multiplier="1:1" id="CWw-2U-gqR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                        <state key="normal" title="0"/>
+                        <connections>
+                            <action selector="btnNumberAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="MhT-KS-w1U"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8bU-Va-HJC" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="4v6-kX-4YV"/>
+                <constraint firstItem="8bU-Va-HJC" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.5" id="5G4-Fe-J3o"/>
+                <constraint firstItem="8bU-Va-HJC" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="yZx-lV-0hm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="100" height="101"/>
+            <connections>
+                <outlet property="btnNumber" destination="8bU-Va-HJC" id="JSE-ek-iRO"/>
+            </connections>
+            <point key="canvasLocation" x="59" y="79.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

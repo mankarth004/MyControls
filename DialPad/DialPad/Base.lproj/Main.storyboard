@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DialPad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NoB-Gx-fpb" customClass="DialPad" customModule="DialPad" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="349" width="375" height="318"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showLines" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonBackground">
+                                        <color key="value" red="0.0034648820470000001" green="0.64164719920000002" blue="0.59546377139999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonTitleColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uxF-Zf-K7e">
+                                <rect key="frame" x="125" y="284" width="125" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="NxM-g1-5ed"/>
+                                    <constraint firstAttribute="width" constant="125" id="lZm-7V-llx"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NoB-Gx-fpb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" constant="51.199999999999989" id="150-99-dAd"/>
+                            <constraint firstItem="NoB-Gx-fpb" firstAttribute="top" secondItem="uxF-Zf-K7e" secondAttribute="bottom" constant="20" id="MEO-CB-7G6"/>
+                            <constraint firstItem="NoB-Gx-fpb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="RZJ-ak-MAD"/>
+                            <constraint firstItem="uxF-Zf-K7e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aQt-Bx-GEo"/>
+                            <constraint firstItem="NoB-Gx-fpb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bdI-3g-li6"/>
+                            <constraint firstItem="NoB-Gx-fpb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fb6-JW-4OD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="dialPad" destination="NoB-Gx-fpb" id="xg1-IH-thw"/>
+                        <outlet property="txtNumber" destination="uxF-Zf-K7e" id="T30-Tl-q1m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
